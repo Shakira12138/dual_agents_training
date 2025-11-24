@@ -8,17 +8,10 @@
 #SBATCH --time=192:00:00
 #SBATCH --gpus-per-node=8
 #SBATCH --cpus-per-task=128
-#SBATCH --output=/home/projects/polyullm/zhouqi/slime_kj/logs/slime-rl-4node-%j.out
-#SBATCH --error=/home/projects/polyullm/zhouqi/slime_kj/logs/slime-rl-4node-%j.err
-#SBATCH --exclude klb-dgx-002,klb-dgx-003,klb-dgx-004,klb-dgx-005,klb-dgx-006,klb-dgx-040
 # set -ex
-
 # replace these information with your own
-workdir=/home/projects/polyullm/zhouqi/slime_kj/
-
-container_image=/lustre/projects/polyullm/container/slime+infix-cu129-all-py312+0914.sqsh
-# container_image=/lustre/projects/polyullm/caishuo/slime+fp8+0910.sqsh
-# 使用作业 ID 使容器名称唯一，避免多个作业冲突（容器名称只能包含字母、数字、下划线、破折号）
+workdir=/home/projects/polyullm/
+container_image=/lustre/projects/polyullm/container/slime.sqsh
 container_name="slimerl-infix-cu129-py312-0914-${SLURM_JOB_ID:-default}"
 container_mounts=/lustre/projects/polyullm:/lustre/projects/polyullm,/home/projects/polyullm:/home/projects/polyullm
 
