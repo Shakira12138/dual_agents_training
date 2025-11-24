@@ -67,7 +67,7 @@ We report standard metrics:
 ### Learning Curves
 
 <div align="center">
-  <img src="pics/results_learning_curves.png" width="85%" alt="DualAgent Learning Curves" />
+  <img src="pics/curve.png" width="85%" alt="DualAgent Learning Curves" />
   <p><i>Placeholder: training curves for Agent A and Agent B.</i></p>
 </div>
 
