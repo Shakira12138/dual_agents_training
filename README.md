@@ -76,7 +76,7 @@ We report the performance on math benchmarks AIME24, AIME25:
 
 The evaluation of models and the wandb curves shows that the dual-agent system trains the dual agents successfully.
 
-
+--
 ## 🙏 Acknowledgements
 
 We would like to express our gratitude for the following open-source projects: [slime](https://github.com/THUDM/slime), [retool](https://github.com/ReTool-RL/ReTool) and [MrlX](https://github.com/AQ-MedAI/MrlX/blob/main/MrlX-TakesTwo/).
