@@ -3,17 +3,14 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=1024G
-#SBATCH --partition=AISS2025031801
-#SBATCH --account polyullm
 #SBATCH --time=192:00:00
 #SBATCH --gpus-per-node=8
 #SBATCH --cpus-per-task=128
 # set -ex
 # replace these information with your own
 workdir=/home/projects/polyullm/
-container_image=/lustre/projects/polyullm/container/slime.sqsh
-container_name="slimerl-infix-cu129-py312-0914-${SLURM_JOB_ID:-default}"
-container_mounts=/lustre/projects/polyullm:/lustre/projects/polyullm,/home/projects/polyullm:/home/projects/polyullm
+container_image=slime
+container_name=slime
 
 # Getting the node names
 nodes=$(scontrol show hostnames "$SLURM_JOB_NODELIST")
