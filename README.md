@@ -60,8 +60,8 @@ We report standard metrics:
 
 | models (iteration) | 0 (qwen3-4b-sft-SGLang-RL) | 159       | 259       | 309       | 329       | 399       | 419       | 459       |
 |--------------------|---------------------------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
-| aime24             | 22.19                      |39.11      |43.33      |           |42.08      |           |           |           |
-| aime25             | 18.30                      |28.90      |30.94      |32.13      |30.57      |28.54      |30.37      |31.04      |
+| aime24             |            22.19           |39.11      |43.33      |           |42.08      |           |           |           |
+| aime25             |            18.30           |28.90      |30.94      |32.13      |30.57      |28.54      |30.37      |31.04      |
 
  
 ### Learning Curves
@@ -76,11 +76,7 @@ We report standard metrics:
   <p><i>Training curves for Agent B.</i></p>
 </div>
 
-Typical plots include:
-
-- Episode return vs. training steps  
-- Win rate vs. training steps  
-- Comparison between different configurations (e.g., self-play vs. fixed-opponent)
+The evaluation of models and the wandb curves shows that the dual-agent system trains the dual agents successfully.
 
 
 
