@@ -24,7 +24,11 @@ To address this problem, we propose **DualAgent**, a **dual-agent training frame
 This section explains how to **prepare experiments, data and model** to start the code.
 
 ### 1. Model and Data Setup
-
+- Model:  font-info/qwen3-4b-sft-SGLang-RL, which is fine-tuned on Qwen3-4B-instruct-2507 in slime/retool
+- Datasets: dapo-math-17k
+- RL method: GRPO
+- Setup for summary agent: separation of training and inference
+- Parameters: github link
 
 ### 2. Environment Setup
 
@@ -50,4 +54,53 @@ sbatch --nodes=2  --job-name=retool  submit_2nodes.sh slime-1106/examples/retool
 
 ---
 ##  📊 Results
+
+This section gives a brief, visual summary of DualAgent’s performance.  
+All figures are stored in the `/pics` folder and can be replaced with your own plots.
+
+### Overall Performance
+
+<div align="center">
+  <img src="pics/results_overall.png" width="85%" alt="DualAgent Overall Results" />
+  <p><i>Placeholder: overall performance of DualAgent across different environments.</i></p>
+</div>
+
+We report standard metrics such as:
+
+- **Win rate / success rate**
+- **Average episode return**
+- **Average episode length**
+
+These metrics are logged during training and evaluation and can be easily visualized with tools like TensorBoard or Matplotlib.
+
+### Learning Curves
+
+<div align="center">
+  <img src="pics/results_learning_curves.png" width="85%" alt="DualAgent Learning Curves" />
+  <p><i>Placeholder: training curves for Agent A and Agent B.</i></p>
+</div>
+
+Typical plots include:
+
+- Episode return vs. training steps  
+- Win rate vs. training steps  
+- Comparison between different configurations (e.g., self-play vs. fixed-opponent)
+
+### Environment-wise Breakdown
+
+<div align="center">
+  <img src="pics/results_env_breakdown.png" width="85%" alt="DualAgent Environment Breakdown" />
+  <p><i>Placeholder: per-environment performance comparison.</i></p>
+</div>
+
+An example summary table:
+
+| Environment | Setting          | Win Rate (%) | Avg. Return |
+|------------|------------------|-------------:|------------:|
+| Env-1      | Self-Play        | 78.4         | 1.25        |
+| Env-1      | Single-Agent     | 65.2         | 0.93        |
+| Env-2      | Cooperative Duo  | 81.0         | 1.47        |
+
+> All numbers and figures above are placeholders.  
+> Replace the image files in `/pics` and update the text/table with your actual experimental results.
 
