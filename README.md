@@ -49,10 +49,10 @@ sbatch --nodes=2  --job-name=retool  submit_2nodes.sh slime-1106/examples/retool
 ---
 ##  📊 Results
 
-This section gives a brief, visual summary of DualAgent’s performance.  
+This section gives a brief, visual summary of Dual-Agent’s performance.  
 All figures are stored in the `/pics` folder and can be replaced with your own plots.
 
-### Overall Performance
+### 1. Overall Performance
 
 We report the performance on math benchmarks AIME24, AIME25:
 
@@ -62,7 +62,7 @@ We report the performance on math benchmarks AIME24, AIME25:
 | AIME25             |            18.30           |28.90      |30.94      |32.13      |30.57      |28.54      |30.37      |31.04      |
 
  
-### Learning Curves
+### 2. Training Curves
 
 <div align="center">
   <img src="pics/curve.png" width="85%" alt="DualAgent Learning Curves" />
