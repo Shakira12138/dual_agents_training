@@ -35,11 +35,9 @@ This section explains how to **prepare experiments, data and model** to start th
 
 ### 2. Environment Setup
 
-Recommended versions（按实际环境稍作调整即可）：
-
-- Python ≥ 3.9  
-- PyTorch ≥ 2.2  
-- CUDA (optional, for GPU training)  
+- megatron  
+- sglang   
+- slime 
 
 ```bash
 git clone https://github.com/Shakira12138/dual_agents_training.git
