@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  DualAgent: A Dual-Agent Training Framework for Interactive Environments
+  DualAgent Training Framework for Long-Context summarization
   <br>
 </h1>
 
