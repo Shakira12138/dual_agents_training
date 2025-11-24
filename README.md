@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  DualAgent Training Framework for Long-Context Summarization
+  Dual-Agent Training Framework for Long-Context Summarization
   <br>
 </h1>
 
