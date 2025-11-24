@@ -56,12 +56,12 @@ All figures are stored in the `/pics` folder and can be replaced with your own p
 
 ### Overall Performance
 
-We report standard metrics:
+We report the performance on math benchmarks AIME24, AIME25:
 
 | models (iteration) | 0 (qwen3-4b-sft-SGLang-RL) | 159       | 259       | 309       | 329       | 399       | 419       | 459       |
 |:------------------:|:--------------------------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| aime24             |            22.19           |39.11      |43.33      |           |42.08      |           |           |           |
-| aime25             |            18.30           |28.90      |30.94      |32.13      |30.57      |28.54      |30.37      |31.04      |
+| AIME24             |            22.19           |39.11      |43.33      |           |42.08      |           |           |           |
+| AIME25             |            18.30           |28.90      |30.94      |32.13      |30.57      |28.54      |30.37      |31.04      |
 
  
 ### Learning Curves
