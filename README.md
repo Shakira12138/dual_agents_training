@@ -21,9 +21,12 @@ To address this problem, we propose **DualAgent**, a **dual-agent training frame
 
 ## ⚙️ Setup
 
-This section explains how to **install dependencies**, **configure experiments**, and **start the code**.
+This section explains how to **prepare experiments, data and model** to start the code.
 
-### 1. Environment Setup
+### 1. Model and Data Setup
+
+
+### 2. Environment Setup
 
 Recommended versions（按实际环境稍作调整即可）：
 
@@ -40,7 +43,11 @@ source .venv/bin/activate
 # 克隆仓库
 git clone https://github.com/Shakira12138/dual_agents_training.git
 cd dual_agents_training
+sbatch --nodes=2  --job-name=summary  submit_2nodes.sh slime-1106/examples/retool_summary/run_agent_summary_sbatch_router.sh
+sbatch --nodes=2  --job-name=retool  submit_2nodes.sh slime-1106/examples/retool_summary/run_agent_retool_sbatch_router.sh
+```
 
-# 安装依赖
-pip install --upgrade pip
-pip install -r requirements.txt
+
+---
+##  📊 Results
+
