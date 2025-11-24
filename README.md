@@ -17,7 +17,7 @@ A fundamental challenge for tool-using language agents is handling **multi-step 
 To address this problem, we propose **DualAgent**, a **dual-agent training framework** that separates *solving the task* from *summarizing the task so far*. An **Answering Agent** carries out multi-round reasoning and tool use, while a **Summarizing Agent** periodically compresses the ongoing interaction into a concise semantic summary once it becomes overlong. The Answering Agent then continues conditioned on this summary rather than the full history. For RL, we use only the final summary and its subsequent continuation as the conditioning context, yielding a **compact high-level representation** of long tool-use trajectories, alleviating context-length constraints, and **focusing the reward signal on semantically important decisions**.
 
 <div align="center">
-  <img src="pics/main.PNG" width="85%" alt="DualAgent" />
+  <img src="pics/main.png" width="85%" alt="DualAgent" />
   <p><i>mainnn.</i></p>
 </div>
 
