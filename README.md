@@ -58,17 +58,22 @@ All figures are stored in the `/pics` folder and can be replaced with your own p
 
 We report standard metrics:
 
-| models (iteration) | Setting          | Win Rate (%) | Avg. Return |
-|------------|------------------|-------------:|------------:|
-| aime24    | Self-Play        | 78.4         | 1.25        |
-| aime25    | Single-Agent     | 65.2         | 0.93        |
+| models (iteration) | Win Rate (%) | Avg. Return |
+|--------------------|-------------:|------------:|
+| aime24             | 78.4         | 1.25        |
+| aime25             | 65.2         | 0.93        |
 
  
 ### Learning Curves
 
 <div align="center">
   <img src="pics/curve.png" width="85%" alt="DualAgent Learning Curves" />
-  <p><i>Placeholder: training curves for Agent A and Agent B.</i></p>
+  <p><i>Training curves for Agent A.</i></p>
+</div>
+
+<div align="center">
+  <img src="pics/curve2.png" width="85%" alt="DualAgent Learning Curves" />
+  <p><i>Training curves for Agent B.</i></p>
 </div>
 
 Typical plots include:
