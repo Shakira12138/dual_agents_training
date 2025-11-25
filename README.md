@@ -50,7 +50,6 @@ sbatch --nodes=2  --job-name=retool  submit_2nodes.sh slime-1106/examples/retool
 ##  📊 Results
 
 This section gives a brief, visual summary of Dual-Agent’s performance.  
-All figures are stored in the `/pics` folder and can be replaced with your own plots.
 
 ### 1. Overall Performance
 
