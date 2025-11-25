@@ -18,7 +18,7 @@ To address this problem, we propose **DualAgent**, a **dual-agent training frame
 
 <div align="center">
   <img src="pics/main.png" width="85%" alt="DualAgent" />
-  <p><i>mainnn.</i></p>
+  <p><i>The design of the RL of the dual-agents.</i></p>
 </div>
 
 ---
